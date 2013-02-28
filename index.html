@@ -6,8 +6,8 @@
 
 		<title>reveal.js - The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Presentation after W3Conf 2013">
+		<meta name="author" content="Tauseef Jamadar">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -26,7 +26,7 @@
 		</script>
 
 		<style type="text/css">
-		#eclipse-demo{
+		#ellipse-demo{
 				border-bottom: 1px solid; 
 			   border-left: 1px solid; 
 			   border-right: 1px solid; 
@@ -84,10 +84,10 @@
 							<li><a href="">Eventsbrite</a></li>
 							<li>
 								<h6>Example of using ellipsis</h6>
-								<div id="eclipse-demo-without">
+								<div id="ellipse-demo-without">
 									I am working on my blog post formatting this day.
 								</div>
-								<div id="eclipse-demo">
+								<div id="ellipse-demo">
 									I am working on my blog post formatting this day.
 								</div>
 							</li>
@@ -98,44 +98,13 @@
 						Use table-layout : fixed for tables
 					</aside>
 				</section>
-				<!-- Example of nested vertical slides 
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-				-->
+				
 				<section>
 					<h2>Session Storage and Local Storage</h2>
 					<p>
 						<p>Cookies take upto 4 KB</p>
 						<p>Local Storage allows upto 5 MB of storage</p>
-						<p>Local storage limitation ... can store onyl strings</p>
+						<p>Local storage limitation ... can store only strings</p>
 						<p>No data sent over to the server</p>
 					</p>
 				</section>
@@ -194,27 +163,75 @@
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
+					<h2>Revisions in ECMAScript 6</h2>
+					<p>What is ECMAScript ??</p>
 					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
+						<li>Some history of other versions</li>
+						<li>Latest specification</li>
+						<li>ES 6 Has way many flashy features</li>
+						<li>Completely backward compatible</li>
 					</ol>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+				<section>
+					<h3>ES 6 - Features</h3>
+					<ol>
+						<li>Maps</li>
+						<li>Class and modules</li>
+						<li>Block Scoping</li>		
+						<li>Generators</li>
+						<li>Reflection Methods</li>
+						<li>Full Unicode support for strings</li>
+						<li> ... ... </li>
+					</ol>
+				</section>
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+				<section>
+					<h3>Block Scoping</h3>
+					<p>Lexical declarations with let and const</p>
+					<ol>
+						<li>Let creates a block scope varialbe</li>
+						<li>const follows scemantics of let and creates a read only constant declaration</li>
+						<li>Function declarations are also supported within blocks with ES6</li>
+					</ol>	
+				</section>
 
-							<section data-markdown>
-							  ## Markdown support
-
-							  For those of you who like that sort of thing.
-							  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-							</section>
-					</script>
+				<section>
+					<section data-markdown>
+						##Example
+						<pre>
+							<code>
+								if(false)
+								{
+									var value = 234;
+									function getValue()
+									{
+										return value;
+									}
+								}
+								getValue();
+								//=> undefined
+							</code>
+						</pre>
+						<p>It run's, no syntax error</p>
+					</section>
+					<section data-markdown>
+						##Solution
+						<pre>
+							<code>
+								if(false)
+								{
+									let value = 234;
+									function getValue()
+									{
+										return value;
+									}
+								} 
+								getValue();
+							</code>
+						</pre>
+						<p>You get reference error which is more likely expected</p>
+					</section>
 				</section>
 
 				<section id="transitions">
