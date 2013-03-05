@@ -36,6 +36,9 @@
 			   width: 350px;
 			   white-space:nowrap;
 		}
+		#header{
+			position: absolute;
+		}
 		</style>
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -43,7 +46,6 @@
 	</head>
 
 	<body>
-
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -101,12 +103,12 @@
 				
 				<section>
 					<h2>Session Storage and Local Storage</h2>
-					<p>
-						<p>Cookies take upto 4 KB</p>
-						<p>Local Storage allows upto 5 MB of storage</p>
-						<p>Local storage limitation ... can store only strings</p>
-						<p>No data sent over to the server</p>
-					</p>
+					<ul>
+						<li>Cookies take upto 4 KB</li>
+						<li>Local Storage allows upto 5 MB of storage</li>
+						<li>Local storage limitation ... can store only strings</li>
+						<li>No data sent over to the server</li>
+					</ul>
 				</section>
 
 				<section>
@@ -190,7 +192,7 @@
 					<h3>Block Scoping</h3>
 					<p>Lexical declarations with let and const</p>
 					<ol>
-						<li>'let' creates a block scope varialbe</li>
+						<li>'let' creates a block scope variable</li>
 						<li>'const' follows scemantics of 'let' and creates a read only constant declaration</li>
 						<li>Function declarations are also supported within blocks with ES6</li>
 					</ol>	
@@ -298,15 +300,50 @@
 				</section>
 				<section>
 					<section>
+						<h3>Fluid User Interface with Hardware Acceleration</h3>
+						<img src="images\browserComponents.png">
+					</section>
+					<section>
+						<h3>DOM tree of the example markup</h3>
+						<img src="images\DOMTree.png">
+					</section>
+					<section>
+						
+						<ul>
+							<li>Rendering is important part of the browser Done by the render stack</li>
+							<li>It involves Css Paiting </li>
+							<li>Make use of GPU for rendering web pages</li>
+							<li>Avoid general purpose computing for GPU</li>
+							<li>In beginning push as many resources to the GPU as possible</li>
+							<li>During animation minimize interaction between CPU-GPU</li>
+							<li><a href="http://www.webkit.org/blog-files/leaves/">DEMO Smooth animation</a></li>
+							<li><a href="http://codepen.io/ariya/pen/xuwgy">DEMO</a></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Things to keep in mind</h2>
+						<ul>
+							<li>Avoid over capacity, use GPU like a cache</li>
+							<li>Css Color transition causes new texture to be uploaded to GPU every time</li>
+							<li>Instead use two divs with varying opacity <a href="http://codepen.io/ariya/full/ofDIh">DEMO</a></li>
+							<li>Use Css3 animations instead of translate3d</li>
+							<li>Be adviced of texture uploads</li>
+
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
 							<h3>Web development practical standards</h3>
 							<ul>
-								<li>Class names should be more decsriptive to the nature of the content</li>
+								<li>Class names should be more descriptive to the nature of the content</li>
 								<li>Recommended way to use hyphens in the class names</li>
 								<li>Double hyphens represent modifier class</li>
 								<li>Use namespace in the names</li>
 								<li>Avoid extra elements in the markup</li>
 								<li>Don't use tables for any layout</li>
-								<li>More information on Web componenets spec</li>
+								<li>More information on Web components spec</li>
 							</ul>
 					</section>
 					<section>
