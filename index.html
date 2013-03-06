@@ -1,368 +1,487 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>W3Conf Presentation - Auctiva</title>
+    <title>W3Conf Presentation - Auctiva</title>
 
-		<meta name="description" content="Presentation after W3Conf 2013">
-		<meta name="author" content="Tauseef Jamadar">
+    <meta name="description" content="Presentation after W3Conf 2013">
+    <meta name="author" content="Tauseef Jamadar">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/beige.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
 
-		<style type="text/css">
-		#ellipse-demo{
-				border-bottom: 1px solid; 
-			   border-left: 1px solid; 
-			   border-right: 1px solid; 
-			   border-top: 1px solid;        
-			   overflow: hidden; 
-			   text-overflow: ellipsis; 
-			   width: 350px;
-			   white-space:nowrap;
-		}
-		#header{
-			position: absolute;
-		}
+    <style type="text/css">
+    #ellipse-demo{
+        border-bottom: 1px solid;
+         border-left: 1px solid;
+         border-right: 1px solid;
+         border-top: 1px solid;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         width: 350px;
+         white-space:nowrap;
+    }
+    #header{
+      position: absolute;
+    }
 
-		#ie{
-			top: -80px;
-			position: absolute;
-			left: 900px;
-			border: none;
-			box-shadow: none;
-		}
-		.removeBorder{
-			border: none !important;
-			box-shadow: none !important;
-		}
-		</style>
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    #ie{
+      top: -80px;
+      position: absolute;
+      left: 900px;
+      border: none;
+      box-shadow: none;
+    }
+    .removeBorder{
+      border: none !important;
+      box-shadow: none !important;
+    }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-	<body>
-		<div class="reveal">
+  <body>
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
 
-				<section>
-					
-					<img src="images\logo.svg" alt="W3Conf">
-					<h2>W3Conf</h2>
-					<h3>HTML Presentation</h3>
+        <section>
 
-					<p>
-						<small>Attended by Tauseef Jamadar & Jeremiah Bagula (21 -22 February 2013  San Francisco)</small>
-					</p>
-				</section>
+          <img src="images\logo.svg" alt="W3Conf">
+          <h2>W3Conf</h2>
+          <h3>HTML Presentation</h3>
 
-				<section>
-					<h2>Web Platform org</h2>
-					<a href="http://www.webplatform.org/" ></a>
-					<p>
-						<ul>
-							<li>Common place for web platform standards</li>
-							<li>Open Source</li>
-							<li>Defenative source of information</li>
-							<li>Pretty good documentation on API's</li>
-						</ul>
-					</p>
+          <p>
+            <small>Attended by Tauseef Jamadar & Jeremiah Bagula (21 -22 February 2013  San Francisco)</small>
+          </p>
+        </section>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-				
-				<section>
-					<h2>Session Storage and Local Storage</h2>
-					<ul>
-						<li>Cookies take upto 4 KB</li>
-						<li>Local Storage allows upto 5 MB of storage</li>
-						<li>Local storage limitation ... can store only strings</li>
-						<li>No data sent over to the server</li>
-					</ul>
-				</section>
+        <!-- Start of the presentation -->
+        <section>
+          <section>
+            <h2><a href="http://www.webplatform.org/">webplatform.org</a></h2>
+            <img src="http://docs.webplatform.org/w/skins/webplatform/images/footer-images.png" style="border: none;" />
+            <ul>
+              <li>Open source wiki style platform</li>
+              <li>Supported by big names in the industry</li>
+              <li>A place for developer to learn, play, and contribute</li>
+            </ul>
+          </section>
+          <section>
+            <h2><img src="http://www.webplatform.org/assets/logo-with-text.png" /></h2>
+            <ul>
+              <li>Common place for ALL open web standards</li>
+              <li>Defenative source of information </li>
+              <li>Pretty good documentation source on Open Web API's</li>
+              <li>The site going through a startup phase</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Other Similar Sites</h2>
+            <ul>
+              <li>html5rocks.com <br> A site with toturials on HTML 5 technologies similar<br><br></li>
+              <li>html5boilerplate.com <br> A site for downloading the front-end template needed to get a site HTML structure up and running quick<br><br></li>
+              <li>caniuse.com <br> A site that gives information what can be used in now for browsers with CSS, JavaScript, and HTML<br><br></li>
+            </ul>
+          </section>
+        </section>
 
-				<section>
-					<h2>Indexed DB</h2>
-					<p>
-						<ul>
-							<li>Make applications work offline</li>
-							<li><a target="_blank" href="http://nparashuram.com/jquery-indexeddb/example/index.html">Example</a></li>
-							<li><a target="_blank" href="https://github.com/axemclion/jquery-indexeddb">Documentation</a></li>
-						</ul>
-					</p>
-				</section>
-				<section>
-					<ul>
-						<li>Transactions: Implicit .... auto-commit</li>
-						<li>Two flavors <br>
-							1. Async on main browser thread <br>
-							2. Sync on web workers <br>
-						</li>
-					</ul>
-				</section>
+        <!-- HTMl5 Security -->
+        <section>
+          <section>
+            <h2>New Techonolgies Means New Security Standards</h2>
+            <ul>
+              <li>A new look at XSS</li>
+              <li>If the server is compromised the attack is continued using a tampered cross domain XML file to futher attacks on other targets</li>
+              <li>Too large of subject to cover here...</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Cross-origin resource sharing (CORS)</h2>
+            <ul>
+              <li>Why is this important?
+                <ul>
+                  <li>Same Domain Policy issues with trying to shares web services or other web base resources</li>
+                  <li>Aid in securely allowing web resources being shared by modifying headers of the HTTP request</li>
+                </ul>
+              </li>
+              <li>
+                Security Flaws:
+                <ul>
+                  <li>HTML 5 and JavaScript attacks on sites (using HTML 5 attributes in combonation with JavaScript)</li>
+                  <li>Cross Site Scripting (XSS)</li>
+                  <li>For further information on the security: html5security.org</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Know What to Use</h2>
+            <ul>
+              <li>Responsive Design</li>
+              <li>Mobile First Design</li>
+              <li>Frameworks</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Responsive Design When?</h2>
+            <ul>
+              <li>Need a website to respod to different mediums</li>
+              <li>Knowing what the end users are going to be use to view the site</li>
+              <li>Most developers are saying that all sites need to be when created for scalability</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Mobile First Design When?</h2>
+            <ul>
+              <li>Need a website to respod to different mobile devices</li>
+              <li>Knowing what mobile resources are needed such as calling, camera, sms, and even geolocation</li>
+              <li>Most mobile device resources can be accessed through native JavaScript and HTML 5</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Frameworks When?</h2>
+            <ul>
+              <li>Need a website to respod to different devices and browsers</li>
+              <li>Size of the site or web resource being created</li>
+              <li>What kind of Frameworks are there?</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Lets Talk Code:</h2>
+            <pre>
+              <code>
+&lt;canvas id="canvas" width="500px" height="300px"&gt;&lt;/canvas&gt;
 
-				<section data-markdown>
-							<script type="text/template">
-								<section data-markdown>
-								    DATA URI
-								    
-								  	li { 
-									  	background: 
-									    url(data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7)
-									    no-repeat
-									    left center;
-									  	padding: 5px 0 5px 25px;
-									}
+&lt;label&gt;Get Image: &lt;input type="file" accept="image/*" capture="camera" id="file-input"&gt;&lt;/label&gt;
 
-									IN HTML
-									<img width="16" height="16" alt="star" src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7" />
+&lt;script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
 
-									More specifically
+&lt;script&gt;
+$(function() {
+    $('#file-input').change(function(e) {
+        var file = e.target.files[0],
+            imageType = /image.*/;
 
-									data:[<mime type>][;charset=<charset>][;base64],<encoded data>
+        if (!file.type.match(imageType))
+            return;
 
-								</section>
-								
-								</script>
-						
-				</section>
+        var reader = new FileReader();
+            reader.onload = fileOnload;
+            reader.readAsDataURL(file);
+    });
 
-				<section>
-					<h2>ISSUE with IE8</h2> <img id="ie" src="images/ie.png">
-					<p>
-						IE8 has the lowest maximum data URI size of 32768 Bytes. 
-					</p>
-				</section>
+    function fileOnload(e) {
+        var $img = $('&lt;img&gt;', { src: e.target.result });
+        var canvas = $('#canvas')[0];
+        var context = canvas.getContext('2d');
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            context.beginPath();
 
-				<section>
-					<h2>Revisions in ECMAScript 6</h2>
-					<p>What is ECMAScript ??</p>
-					<p class="fragment"><b>European Computing Manufacturers Association</b></p>
-					<ol>
-						<li>Some history of other versions</li>
-						<li>Latest specification</li>
-						<li>ES 6 Has way many flashy features</li>
-						<li>Completely backward compatible</li>
-					</ol>
-				</section>
+        $img.load(function() {
+            context.drawImage(this, 0, 0);
+        });
+    }
+});
+&lt;/script&gt;
+              </code>
+            </pre>
+          </section>
+        </section>
 
-				<section>
-					<h3>ES 6 - Features</h3>
-					<ol>
-						<li>Maps</li>
-						<li>Class and modules</li>
-						<li>Block Scoping</li>		
-						<li>Generators</li>
-						<li>Reflection Methods</li>
-						<li>Full Unicode support for strings</li>
-						<li> ...... </li>
-					</ol>
-				</section>
+<!-- Tauseef -->
+        <section>
+          <h2>Session Storage and Local Storage</h2>
+          <ul>
+            <li>Cookies take upto 4 KB</li>
+            <li>Local Storage allows upto 5 MB of storage</li>
+            <li>Local storage limitation ... can store only strings</li>
+            <li>No data sent over to the server</li>
+          </ul>
+        </section>
 
-				<section class="future">
-					<h3>Block Scoping</h3>
-					<p>Lexical declarations with let and const</p>
-					<ol>
-						<li>'let' creates a block scope variable</li>
-						<li>'const' follows scemantics of 'let' and creates a read only constant declaration</li>
-						<li>Function declarations are also supported within blocks with ES6</li>
-					</ol>	
-				</section>
+        <section>
+          <h2>Indexed DB</h2>
+          <p>
+            <ul>
+              <li>Make applications work offline</li>
+              <li><a target="_blank" href="http://nparashuram.com/jquery-indexeddb/example/index.html">Example</a></li>
+              <li><a target="_blank" href="https://github.com/axemclion/jquery-indexeddb">Documentation</a></li>
+            </ul>
+          </p>
+        </section>
+        <section>
+          <ul>
+            <li>Transactions: Implicit .... auto-commit</li>
+            <li>Two flavors <br>
+              1. Async on main browser thread <br>
+              2. Sync on web workers <br>
+            </li>
+          </ul>
+        </section>
 
-				<section>
-					<section data-markdown>
-						##Example
-						<pre>
-							<code>
-								if(false)
-								{
-									var value = 234;
-									function getValue()
-									{
-										return value;
-									}
-								}
-								getValue();
-								//=> undefined
-							</code>
-						</pre>
-						<p>It run's, no syntax error</p>
-					</section>
-					<section data-markdown>
-						##Solution
-						<pre>
-							<code>
-								if(false)
-								{
-									let value = 234;
-									function getValue()
-									{
-										return value;
-									}
-								} 
-								getValue();
-							</code>
-						</pre>
-						<p>You get reference error which is more likely expected</p>
-					</section>
-				</section>
-				<section>
-					<section>
-						<h2>Destructuring Assignment</h2>
-						<ul>
-							<li>Extract values from arrays and objects</li>
-							<li>Swap variables (without use of a temp variable)</li>
-						</ul>
-					</section>
-					<section data-markdown>
-						
-						##Example
-						<pre>
-							<code>
-								//Import parse and stringify properties of the JSON object
-								var { parse, stringify } = JSON;
+        <section data-markdown>
+              <script type="text/template">
+                <section data-markdown>
+                    DATA URI
 
-								//exec the regular exp and assign values
-								//first param is the complete match
-								var [,areacode,local] = /^(\d{3})-(\d{3}-\d{4})$/.exec(phone);
+                    li {
+                      background:
+                      url(data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7)
+                      no-repeat
+                      left center;
+                      padding: 5px 0 5px 25px;
+                  }
 
-								//Swap variables
-								[ left, right ] = [ right, left ]
+                  IN HTML
+                  <img width="16" height="16" alt="star" src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7" />
 
-							</code>
-						</pre>
-					</section>
-				</section>
+                  More specifically
 
-				<section>
-					<section>
-						Maps,Weakmaps, sets
-						<pre>
-							<code>.get(), .set(), .has(), .delete(), .clear(), .forEach()</code>
-						</pre>
-						<ul>
-							<li>Weakmaps use weak reference to allow garbage collection</li>
-							<li>sets can find unique elements in linear time</li>
-						</ul>
-					</section>
-				</section>
-				<section>
-					<h2>=> Function</h2>
-					<ul>
-						<li>Concise Syntax</li>
-						<li>Based on expression closures</li>
-						<li>paranthesis not needed for single paramenter functions and no key word function </li>
-						<code>[1,2,3,4,5].filter(value => value %2) // [1,3,5]</code>
-					</ul>
-				</section>
-				<section>
-					<h1> Lot more features ...</h1>
-				</section>	
-				<section>
-					<h2>When can we use it ?? </h2>
-					<ul>
-						<li>
-							Firefox support from 2.0
-						</li>
-						<li>
-							Turn on "Enable Experimental Javascript" features on Chrome and Chromium
-						</li>
+                  data:[<mime type>][;charset=<charset>][;base64],<encoded data>
 
-					</ul>
+                </section>
 
-				</section>
-				<section>
-					<section>
-						<h3>Fluid User Interface with Hardware Acceleration</h3>
-						<img class="removeBorder" src="images\browserComponents.png">
-					</section>
-					<section>
-						<h3>DOM tree of the example markup</h3>
-						<img class="removeBorder" src="images\DOMTree.png">
-					</section>
-					<section>
-						
-						<ul>
-							<li>Rendering is important part of the browser done by the render stack</li>
-							<li>It involves CSS Paiting </li>
-							<li>Make use of GPU for rendering web pages</li>
-							<li>Avoid general purpose computing for GPU</li>
-							<li>In beginning push as many resources to the GPU as possible</li>
-							<li>During animation minimize interaction between CPU-GPU</li>
-							
-						</ul>
-					</section>
-					<section>
-							<h2>Texture uploads (Hardware accelerated CSS)</h2>
-							<h3>No uploads required for </h3>
-							<ul>
-								<li>Opacity</li>
-								<li>Position</li>
-								<li>Size</li>
-								<li>Filter</li>
-							</ul>
-							<p>Rest all need texture upload</p>
-							<ul>
-								<li><a target="_blank" href="http://www.webkit.org/blog-files/leaves/">DEMO Smooth animation</a></li>
-								<li><a target="_blank" href="http://codepen.io/ariya/pen/xuwgy">DEMO</a></li>
-								<li><a target="_blank" href="http://photon.attasi.com/">Photon</a></li>
-								<li><a target="_blank" href="http://www.keithclark.co.uk/labs/3dcss/demo/">3D CSS First Person Shooter</a></li>
-							</ul>
-					</section>
-					<section>
-						<h2>Things to keep in mind</h2>
-						<ul>
-							<li>Avoid over capacity, use GPU like a cache</li>
-							<li>CSS Color transition causes new texture to be uploaded to GPU every time</li>
-							<li>Instead use two divs with varying opacity <a href="http://codepen.io/ariya/full/ofDIh">DEMO</a></li>
-							<li>Use CSS3 animations instead of translate3d</li>
-							<li>Be adviced of texture uploads</li>
+                </script>
 
-						</ul>
-					</section>
-				</section>
+        </section>
 
-				<section>
-					<section>
-							<h3>Web development practical standards</h3>
-							<ul>
-								<li>Class names should be more descriptive to the nature of the content</li>
-								<li>Recommended way to use hyphens in the class names</li>
-								<li>Double hyphens represent modifier class</li>
-								<li>Use namespace in the names</li>
-								<li>Avoid extra elements in the markup</li>
-								<li>Don't use tables for any layout</li>
-								<li>More information on Web components spec</li>
-							</ul>
-					</section>
-					<section>
-						Naming
-						<pre>
-							<code>
+        <section>
+          <h2>ISSUE with IE8</h2> <img id="ie" src="images/ie.png">
+          <p>
+            IE8 has the lowest maximum data URI size of 32768 Bytes.
+          </p>
+        </section>
+
+        <section>
+          <h2>Revisions in ECMAScript 6</h2>
+          <p>What is ECMAScript ??</p>
+          <p class="fragment"><b>European Computing Manufacturers Association</b></p>
+          <ol>
+            <li>Some history of other versions</li>
+            <li>Latest specification</li>
+            <li>ES 6 Has way many flashy features</li>
+            <li>Completely backward compatible</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>ES 6 - Features</h3>
+          <ol>
+            <li>Maps</li>
+            <li>Class and modules</li>
+            <li>Block Scoping</li>
+            <li>Generators</li>
+            <li>Reflection Methods</li>
+            <li>Full Unicode support for strings</li>
+            <li> ...... </li>
+          </ol>
+        </section>
+
+        <section class="future">
+          <h3>Block Scoping</h3>
+          <p>Lexical declarations with let and const</p>
+          <ol>
+            <li>'let' creates a block scope variable</li>
+            <li>'const' follows scemantics of 'let' and creates a read only constant declaration</li>
+            <li>Function declarations are also supported within blocks with ES6</li>
+          </ol>
+        </section>
+
+        <section>
+          <section data-markdown>
+            ##Example
+            <pre>
+              <code>
+                if(false)
+                {
+                  var value = 234;
+                  function getValue()
+                  {
+                    return value;
+                  }
+                }
+                getValue();
+                //=> undefined
+              </code>
+            </pre>
+            <p>It run's, no syntax error</p>
+          </section>
+          <section data-markdown>
+            ##Solution
+            <pre>
+              <code>
+                if(false)
+                {
+                  let value = 234;
+                  function getValue()
+                  {
+                    return value;
+                  }
+                }
+                getValue();
+              </code>
+            </pre>
+            <p>You get reference error which is more likely expected</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Destructuring Assignment</h2>
+            <ul>
+              <li>Extract values from arrays and objects</li>
+              <li>Swap variables (without use of a temp variable)</li>
+            </ul>
+          </section>
+          <section data-markdown>
+
+            ##Example
+            <pre>
+              <code>
+                //Import parse and stringify properties of the JSON object
+                var { parse, stringify } = JSON;
+
+                //exec the regular exp and assign values
+                //first param is the complete match
+                var [,areacode,local] = /^(\d{3})-(\d{3}-\d{4})$/.exec(phone);
+
+                //Swap variables
+                [ left, right ] = [ right, left ]
+
+              </code>
+            </pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            Maps,Weakmaps, sets
+            <pre>
+              <code>.get(), .set(), .has(), .delete(), .clear(), .forEach()</code>
+            </pre>
+            <ul>
+              <li>Weakmaps use weak reference to allow garbage collection</li>
+              <li>sets can find unique elements in linear time</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h2>=> Function</h2>
+          <ul>
+            <li>Concise Syntax</li>
+            <li>Based on expression closures</li>
+            <li>paranthesis not needed for single paramenter functions and no key word function </li>
+            <code>[1,2,3,4,5].filter(value => value %2) // [1,3,5]</code>
+          </ul>
+        </section>
+        <section>
+          <h1> Lot more features ...</h1>
+        </section>
+        <section>
+          <h2>When can we use it ?? </h2>
+          <ul>
+            <li>
+              Firefox support from 2.0
+            </li>
+            <li>
+              Turn on "Enable Experimental Javascript" features on Chrome and Chromium
+            </li>
+
+          </ul>
+
+        </section>
+        <section>
+          <section>
+            <h3>Fluid User Interface with Hardware Acceleration</h3>
+            <img class="removeBorder" src="images\browserComponents.png">
+          </section>
+          <section>
+            <h3>DOM tree of the example markup</h3>
+            <img class="removeBorder" src="images\DOMTree.png">
+          </section>
+          <section>
+
+            <ul>
+              <li>Rendering is important part of the browser done by the render stack</li>
+              <li>It involves CSS Paiting </li>
+              <li>Make use of GPU for rendering web pages</li>
+              <li>Avoid general purpose computing for GPU</li>
+              <li>In beginning push as many resources to the GPU as possible</li>
+              <li>During animation minimize interaction between CPU-GPU</li>
+
+            </ul>
+          </section>
+          <section>
+              <h2>Texture uploads (Hardware accelerated CSS)</h2>
+              <h3>No uploads required for </h3>
+              <ul>
+                <li>Opacity</li>
+                <li>Position</li>
+                <li>Size</li>
+                <li>Filter</li>
+              </ul>
+              <p>Rest all need texture upload</p>
+              <ul>
+                <li><a target="_blank" href="http://www.webkit.org/blog-files/leaves/">DEMO Smooth animation</a></li>
+                <li><a target="_blank" href="http://codepen.io/ariya/pen/xuwgy">DEMO</a></li>
+                <li><a target="_blank" href="http://photon.attasi.com/">Photon</a></li>
+                <li><a target="_blank" href="http://www.keithclark.co.uk/labs/3dcss/demo/">3D CSS First Person Shooter</a></li>
+              </ul>
+          </section>
+          <section>
+            <h2>Things to keep in mind</h2>
+            <ul>
+              <li>Avoid over capacity, use GPU like a cache</li>
+              <li>CSS Color transition causes new texture to be uploaded to GPU every time</li>
+              <li>Instead use two divs with varying opacity <a href="http://codepen.io/ariya/full/ofDIh">DEMO</a></li>
+              <li>Use CSS3 animations instead of translate3d</li>
+              <li>Be adviced of texture uploads</li>
+
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+              <h3>Web development practical standards</h3>
+              <ul>
+                <li>Class names should be more descriptive to the nature of the content</li>
+                <li>Recommended way to use hyphens in the class names</li>
+                <li>Double hyphens represent modifier class</li>
+                <li>Use namespace in the names</li>
+                <li>Avoid extra elements in the markup</li>
+                <li>Don't use tables for any layout</li>
+                <li>More information on Web components spec</li>
+              </ul>
+          </section>
+          <section>
+            Naming
+            <pre>
+              <code>
 /* Component */
 .Button { .. }
 
-/* Component */	
+/* Component */
 .ButtonGroup { .. }
 
 /* Component modifier */
@@ -371,17 +490,17 @@
 /* Component Child */
 .ButtonGroup-item { .. }
 
-							</code>
-						</pre>
-					</section>
-					<section>
-						Namespacing
-						<pre>
-							<code>
+              </code>
+            </pre>
+          </section>
+          <section>
+            Namespacing
+            <pre>
+              <code>
 /* Component */
 .ns-Button { .. }
 
-/* Component */	
+/* Component */
 .ns-ButtonGroup { .. }
 
 /* Component modifier */
@@ -390,109 +509,109 @@
 /* Component Child */
 .ns-ButtonGroup-item { .. }
 
-							</code>
-						</pre>
-					</section>
-				</section>
-				
-				<section>
-					<section>
-						<h3>Good to know </h3>
-							<ul>
-								<li><a target="_blank" href="http://caniuse.com/">Can I use ?</a> </li>
-								<li>
-									<h6>Example of using ellipsis</h6>
-									<div id="ellipse-demo-without">
-										I am working on my blog post formatting this day.
-									</div>
-									<div id="ellipse-demo">
-										I am working on my blog post formatting this day.
-									</div>
-								</li>
-								<li>
-									Use of <pre><code>background-attachment: local;</code></pre> to make background scrollable with the content
-								</li>
-								<li>	
-									Restricting transitions to a property
-									<pre><code>transition: 1s height;</code></pre>
-								</li>
-							</ul>
-						<aside class="notes">
-							Use table-layout : fixed for tables
-						</aside>
-					</section>	
-					<section>
-						<ul>
-							<li>Use hyphenation wherever you justify the text</li>
-							<pre>
-							<code>
+              </code>
+            </pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Good to know </h3>
+              <ul>
+                <li><a target="_blank" href="http://caniuse.com/">Can I use ?</a> </li>
+                <li>
+                  <h6>Example of using ellipsis</h6>
+                  <div id="ellipse-demo-without">
+                    I am working on my blog post formatting this day.
+                  </div>
+                  <div id="ellipse-demo">
+                    I am working on my blog post formatting this day.
+                  </div>
+                </li>
+                <li>
+                  Use of <pre><code>background-attachment: local;</code></pre> to make background scrollable with the content
+                </li>
+                <li>
+                  Restricting transitions to a property
+                  <pre><code>transition: 1s height;</code></pre>
+                </li>
+              </ul>
+            <aside class="notes">
+              Use table-layout : fixed for tables
+            </aside>
+          </section>
+          <section>
+            <ul>
+              <li>Use hyphenation wherever you justify the text</li>
+              <pre>
+              <code>
 #foo
-{ 
-	text-align: justify;
-	hyphens: auto;
+{
+  text-align: justify;
+  hyphens: auto;
 }
-							</code>
-							</pre>
-							<li>
-								less browser support (Firefox 6,IE 10, Safari 5.1)
-							</li>
+              </code>
+              </pre>
+              <li>
+                less browser support (Firefox 6,IE 10, Safari 5.1)
+              </li>
 
-						</ul>
-					</section>
-					<section>
-						<ul>
-							<li>'ch' unit 
-								<pre>
-									<code>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>'ch' unit
+                <pre>
+                  <code>
 #foo{
-	width: 13.2 em /* fallback */
-	width: 32 ch /* # of chars */
+  width: 13.2 em /* fallback */
+  width: 32 ch /* # of chars */
 }
-									</code>
-								</pre>
-								<p>This will go to webkit pretty soon</p>
-							</li>
-						</ul>
-					</section>
-				</section>
-				<section>
-					<h1>THE END</h1>
-					<img src="images/clap.png">
-				</section>
+                  </code>
+                </pre>
+                <p>This will go to webkit pretty soon</p>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h1>THE END</h1>
+          <img src="images/clap.png">
+        </section>
 
-			</div>
+      </div>
 
-		</div>
+    </div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
 
-		<script>
+    <script>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'page', // default/cube/page/concave/zoom/linear/fade/none
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'page', // default/cube/page/concave/zoom/linear/fade/none
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
 
-		</script>
+    </script>
 
-	</body>
+  </body>
 </html>
