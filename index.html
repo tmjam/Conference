@@ -39,6 +39,18 @@
 		#header{
 			position: absolute;
 		}
+
+		#ie{
+			top: -80px;
+			position: absolute;
+			left: 900px;
+			border: none;
+			box-shadow: none;
+		}
+		.removeBorder{
+			border: none !important;
+			box-shadow: none !important;
+		}
 		</style>
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -58,7 +70,7 @@
 					<h3>HTML Presentation</h3>
 
 					<p>
-						<small>Attended by Tauseef Jamadar & Jeremiah Bagula</small>
+						<small>Attended by Tauseef Jamadar & Jeremiah Bagula (21 -22 February 2013  San Francisco)</small>
 					</p>
 				</section>
 
@@ -78,28 +90,6 @@
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 					</aside>
 				</section>
-				<section>
-					<h3>Resources</h3>
-					<p>
-						<ul>
-							<li><a href="">Can I use ?</a> </li>
-							<li><a href="">Eventsbrite</a></li>
-							<li>
-								<h6>Example of using ellipsis</h6>
-								<div id="ellipse-demo-without">
-									I am working on my blog post formatting this day.
-								</div>
-								<div id="ellipse-demo">
-									I am working on my blog post formatting this day.
-								</div>
-							</li>
-
-						</ul>
-					</p>
-					<aside class="notes">
-						Use table-layout : fixed for tables
-					</aside>
-				</section>
 				
 				<section>
 					<h2>Session Storage and Local Storage</h2>
@@ -116,7 +106,7 @@
 					<p>
 						<ul>
 							<li>Make applications work offline</li>
-							<li><a target="_blank" href="http://nparashuram.com/jquery-indexeddb/example/index.html">EXAMPLE</a></li>
+							<li><a target="_blank" href="http://nparashuram.com/jquery-indexeddb/example/index.html">Example</a></li>
 							<li><a target="_blank" href="https://github.com/axemclion/jquery-indexeddb">Documentation</a></li>
 						</ul>
 					</p>
@@ -134,7 +124,7 @@
 				<section data-markdown>
 							<script type="text/template">
 								<section data-markdown>
-								    ##DATA URI
+								    DATA URI
 								    
 								  	li { 
 									  	background: 
@@ -158,7 +148,7 @@
 				</section>
 
 				<section>
-					<h2>ISSUE with IE8</h2>
+					<h2>ISSUE with IE8</h2> <img id="ie" src="images/ie.png">
 					<p>
 						IE8 has the lowest maximum data URI size of 32768 Bytes. 
 					</p>
@@ -167,6 +157,7 @@
 				<section>
 					<h2>Revisions in ECMAScript 6</h2>
 					<p>What is ECMAScript ??</p>
+					<p class="fragment"><b>European Computing Manufacturers Association</b></p>
 					<ol>
 						<li>Some history of other versions</li>
 						<li>Latest specification</li>
@@ -184,7 +175,7 @@
 						<li>Generators</li>
 						<li>Reflection Methods</li>
 						<li>Full Unicode support for strings</li>
-						<li> ... ... </li>
+						<li> ...... </li>
 					</ol>
 				</section>
 
@@ -269,8 +260,10 @@
 						<pre>
 							<code>.get(), .set(), .has(), .delete(), .clear(), .forEach()</code>
 						</pre>
-						<p>Weakmaps use weak reference to allow garbage collection</p>
-						<p>sets can find unique elements in linear time</p>
+						<ul>
+							<li>Weakmaps use weak reference to allow garbage collection</li>
+							<li>sets can find unique elements in linear time</li>
+						</ul>
 					</section>
 				</section>
 				<section>
@@ -301,32 +294,48 @@
 				<section>
 					<section>
 						<h3>Fluid User Interface with Hardware Acceleration</h3>
-						<img src="images\browserComponents.png">
+						<img class="removeBorder" src="images\browserComponents.png">
 					</section>
 					<section>
 						<h3>DOM tree of the example markup</h3>
-						<img src="images\DOMTree.png">
+						<img class="removeBorder" src="images\DOMTree.png">
 					</section>
 					<section>
 						
 						<ul>
 							<li>Rendering is important part of the browser done by the render stack</li>
-							<li>It involves Css Paiting </li>
+							<li>It involves CSS Paiting </li>
 							<li>Make use of GPU for rendering web pages</li>
 							<li>Avoid general purpose computing for GPU</li>
 							<li>In beginning push as many resources to the GPU as possible</li>
 							<li>During animation minimize interaction between CPU-GPU</li>
-							<li><a target="_blank" href="http://www.webkit.org/blog-files/leaves/">DEMO Smooth animation</a></li>
-							<li><a target="_blank" href="http://codepen.io/ariya/pen/xuwgy">DEMO</a></li>
+							
 						</ul>
+					</section>
+					<section>
+							<h2>Texture uploads (Hardware accelerated CSS)</h2>
+							<h3>No uploads required for </h3>
+							<ul>
+								<li>Opacity</li>
+								<li>Position</li>
+								<li>Size</li>
+								<li>Filter</li>
+							</ul>
+							<p>Rest all need texture upload</p>
+							<ul>
+								<li><a target="_blank" href="http://www.webkit.org/blog-files/leaves/">DEMO Smooth animation</a></li>
+								<li><a target="_blank" href="http://codepen.io/ariya/pen/xuwgy">DEMO</a></li>
+								<li><a target="_blank" href="http://photon.attasi.com/">Photon</a></li>
+								<li><a target="_blank" href="http://www.keithclark.co.uk/labs/3dcss/demo/">3D CSS First Person Shooter</a></li>
+							</ul>
 					</section>
 					<section>
 						<h2>Things to keep in mind</h2>
 						<ul>
 							<li>Avoid over capacity, use GPU like a cache</li>
-							<li>Css Color transition causes new texture to be uploaded to GPU every time</li>
+							<li>CSS Color transition causes new texture to be uploaded to GPU every time</li>
 							<li>Instead use two divs with varying opacity <a href="http://codepen.io/ariya/full/ofDIh">DEMO</a></li>
-							<li>Use Css3 animations instead of translate3d</li>
+							<li>Use CSS3 animations instead of translate3d</li>
 							<li>Be adviced of texture uploads</li>
 
 						</ul>
@@ -387,8 +396,68 @@
 				</section>
 				
 				<section>
+					<section>
+						<h3>Good to know </h3>
+							<ul>
+								<li><a target="_blank" href="http://caniuse.com/">Can I use ?</a> </li>
+								<li>
+									<h6>Example of using ellipsis</h6>
+									<div id="ellipse-demo-without">
+										I am working on my blog post formatting this day.
+									</div>
+									<div id="ellipse-demo">
+										I am working on my blog post formatting this day.
+									</div>
+								</li>
+								<li>
+									Use of <pre><code>background-attachment: local;</code></pre> to make background scrollable with the content
+								</li>
+								<li>	
+									Restricting transitions to a property
+									<pre><code>transition: 1s height;</code></pre>
+								</li>
+							</ul>
+						<aside class="notes">
+							Use table-layout : fixed for tables
+						</aside>
+					</section>	
+					<section>
+						<ul>
+							<li>Use hyphenation wherever you justify the text</li>
+							<pre>
+							<code>
+#foo
+{ 
+	text-align: justify;
+	hyphens: auto;
+}
+							</code>
+							</pre>
+							<li>
+								less browser support (Firefox 6,IE 10, Safari 5.1)
+							</li>
+
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>'ch' unit 
+								<pre>
+									<code>
+#foo{
+	width: 13.2 em /* fallback */
+	width: 32 ch /* # of chars */
+}
+									</code>
+								</pre>
+								<p>This will go to webkit pretty soon</p>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section>
 					<h1>THE END</h1>
-					
+					<img src="images/clap.png">
 				</section>
 
 			</div>
