@@ -126,7 +126,7 @@
               <li>
                 Security Flaws:
                 <ul>
-                  <li>HTML 5 and JavaScript attacks on sites (using HTML 5 attributes in combonation with JavaScript)</li>
+                  <li>HTML 5 and JavaScript attacks on sites (using HTML 5 attributes in combination with JavaScript)</li>
                   <li>Cross Site Scripting (XSS)</li>
                   <li>For further information on the security: html5security.org</li>
                 </ul>
@@ -146,7 +146,7 @@
           <section>
             <h2>Responsive Design When?</h2>
             <ul>
-              <li>Need a website to respod to different mediums</li>
+              <li>Need a website to respond to different mediums</li>
               <li>Knowing what the end users are going to be use to view the site</li>
               <li>Most developers are saying that all sites need to be when created for scalability</li>
             </ul>
@@ -154,7 +154,7 @@
           <section>
             <h2>Mobile First Design When?</h2>
             <ul>
-              <li>Need a website to respod to different mobile devices</li>
+              <li>Need a website to respond to different mobile devices</li>
               <li>Knowing what mobile resources are needed such as calling, camera, sms, and even geolocation</li>
               <li>Most mobile device resources can be accessed through native JavaScript and HTML 5</li>
             </ul>
@@ -162,7 +162,7 @@
           <section>
             <h2>Frameworks When?</h2>
             <ul>
-              <li>Need a website to respod to different devices and browsers</li>
+              <li>Need a website to respond to different devices and browsers</li>
               <li>Size of the site or web resource being created</li>
               <li>What kind of Frameworks are there?</li>
             </ul>
@@ -213,8 +213,8 @@ $(function() {
         <section>
           <h2>Session Storage and Local Storage</h2>
           <ul>
-            <li>Cookies take upto 4 KB</li>
-            <li>Local Storage allows upto 5 MB of storage</li>
+            <li>Cookies take up to 4 KB</li>
+            <li>Local Storage allows up to 5 MB of storage</li>
             <li>Local storage limitation ... can store only strings</li>
             <li>No data sent over to the server</li>
           </ul>
@@ -241,28 +241,27 @@ $(function() {
         </section>
 
         <section data-markdown>
-              <script type="text/template">
-                <section data-markdown>
-                    DATA URI
+              <pre>
+                <code>
+DATA URI
 
-                    li {
-                      background:
-                      url(data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7)
-                      no-repeat
-                      left center;
-                      padding: 5px 0 5px 25px;
-                  }
+li {
+  background:
+  url(data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7)
+  no-repeat
+  left center;
+  padding: 5px 0 5px 25px;
+}
 
-                  IN HTML
-                  <img width="16" height="16" alt="star" src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7" />
+IN HTML
+&lt;img width="16" height="16" alt="star" src="data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7" /&gt;
 
-                  More specifically
+More specifically
 
-                  data:[<mime type>][;charset=<charset>][;base64],<encoded data>
+data:[&lt;mime type&gt;][;charset=&lt;charset&gt;][;base64],&lt;encoded data&gt;
 
-                </section>
-
-                </script>
+                </code>
+                </pre>
 
         </section>
 
@@ -353,20 +352,20 @@ $(function() {
               <li>Swap variables (without use of a temp variable)</li>
             </ul>
           </section>
-          <section data-markdown>
+          <section>
 
             ##Example
             <pre>
               <code>
-                //Import parse and stringify properties of the JSON object
-                var { parse, stringify } = JSON;
+//Import parse and stringify properties of the JSON object
+var { parse, stringify } = JSON;
 
-                //exec the regular exp and assign values
-                //first param is the complete match
-                var [,areacode,local] = /^(\d{3})-(\d{3}-\d{4})$/.exec(phone);
+//exec the regular exp and assign values
+//first param is the complete match
+var [,areacode,local] = /^(\d{3})-(\d{3}-\d{4})$/.exec(phone);
 
-                //Swap variables
-                [ left, right ] = [ right, left ]
+//Swap variables
+[ left, right ] = [ right, left ]
 
               </code>
             </pre>
@@ -423,7 +422,7 @@ $(function() {
 
             <ul>
               <li>Rendering is important part of the browser done by the render stack</li>
-              <li>It involves CSS Paiting </li>
+              <li>It involves CSS Painting </li>
               <li>Make use of GPU for rendering web pages</li>
               <li>Avoid general purpose computing for GPU</li>
               <li>In beginning push as many resources to the GPU as possible</li>
